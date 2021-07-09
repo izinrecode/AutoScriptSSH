@@ -34,7 +34,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "id": "${uuid}",
       "aid": "2",
       "net": "ws",
-      "path": "/hablessh",
+      "path": "/jomblossh",
       "type": "none",
       "host": "",
       "tls": "tls"
@@ -44,12 +44,12 @@ cat>/etc/v2ray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "myvpn-edu.hablestore.me",
+      "add": "imclas.jomblossh.tech",
       "port": "80",
       "id": "${uuid}",
       "aid": "2",
       "net": "ws",
-      "path": "/hablessh",
+      "path": "/jomblossh",
       "type": "none",
       "host": "${domain}",
       "tls": "none"
@@ -70,11 +70,11 @@ echo -e "id             : ${uuid}"
 echo -e "alterId        : 2"
 echo -e "Security       : auto"
 echo -e "network        : ws"
-echo -e "path           : /hablessh"
+echo -e "path           : /jomblossh"
 echo -e "================================="
 echo -e "link TLS       : ${vmesslink1}"
 echo -e "================================="
 echo -e "link none TLS  : ${vmesslink2}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
-echo -e "By Haweng"
+echo -e "By JOMBLOSSH"
