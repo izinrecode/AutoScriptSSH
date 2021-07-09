@@ -30,5 +30,4 @@ Port          : 5555
 Cert          : http://$IP:81/server.crt
 Expired On    : $exp
 ================================
-Script By Haweng
-EOF
+Script By JOMBLOSSH
