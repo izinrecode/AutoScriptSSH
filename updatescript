@@ -61,7 +61,7 @@ do
 		echo "Downloading started!"
 		echo ""
 		sleep 2
-		wget https://raw.githubusercontent.com/kevindoni/AutoScriptSSH/main/premiummenu.zip
+		wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/premiummenu.zip
 		clear
 		echo "=======================PATCHING THE NEW UPDATE======================="
 		echo ""
