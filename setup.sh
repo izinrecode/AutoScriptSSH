@@ -11,7 +11,7 @@ green='\e[0;32m'
 NC='\e[0m'
 MYIP=$(wget -qO- icanhazip.com);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ipvps | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ipvps | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${green}Permission Accepted...${NC}"
 else
@@ -25,14 +25,14 @@ echo "Ketikkan Perintah addhost setelah proses instalasi Script Selesai"
 read -p "Hostname / Domain: " host
 echo "$host" >> /var/lib/premium-script/ipvps.conf 
 echo "$host" >> /etc/v2ray/domain
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
 rm -f /root/sstp.sh
@@ -49,7 +49,7 @@ clear
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo "=================================-Autoscript Premium by HableSSH-===========================" | tee -a log-install.txt
+echo "=================================-Autoscript Premium by JOMBLOSSH-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "--------------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
@@ -84,7 +84,7 @@ echo "   - IPv6                    : [OFF]"  | tee -a log-install.txt
 echo "   - Autoreboot On 05.00 GMT +7" | tee -a log-install.txt
 echo "   - Installation Log --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "------------------------------------------BY HAWENG GANS------------------------------------------" | tee -a log-install.txt
+echo "------------------------------------------BY JSTFREENET------------------------------------------" | tee -a log-install.txt
 echo ""
 echo " Reboot 10 Sec"
 sleep 10
