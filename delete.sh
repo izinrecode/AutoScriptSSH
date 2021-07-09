@@ -36,7 +36,7 @@
                username=$username" " 
                done
                bulantahun=`echo $tglexp |awk -F" " '{print $2,$6}'`
-               echo "echo "HABLESSH- User : $username Expire at : $tgl $bulantahun"" >> /usr/local/bin/alluser
+               echo "echo "jomblossh- User : $username Expire at : $tgl $bulantahun"" >> /usr/local/bin/alluser
                todaystime=`date +%s`
                if [ $userexpireinseconds -ge $todaystime ] ;
                then
