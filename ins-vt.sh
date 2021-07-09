@@ -53,7 +53,7 @@ cat> /etc/v2ray/config.json << END
           ]
         },
         "wsSettings": {
-          "path": "/hablessh",
+          "path": "/jomblossh",
           "headers": {
             "Host": ""
           }
@@ -141,7 +141,7 @@ cat> /etc/v2ray/none.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/hablessh",
+          "path": "/jomblossh",
           "headers": {
             "Host": ""
           }
@@ -238,7 +238,7 @@ cat> /etc/v2ray/vless.json << END
           ]
         },
         "wsSettings": {
-          "path": "/hablessh",
+          "path": "/jomblossh",
           "headers": {
             "Host": ""
           }
@@ -325,7 +325,7 @@ cat> /etc/v2ray/vnone.json << END
       "streamSettings": {
         "network": "ws",
         "wsSettings": {
-          "path": "/hablessh",
+          "path": "/jomblossh",
           "headers": {
             "Host": ""
           }
@@ -453,7 +453,7 @@ iptables-save > /etc/iptables.up.rules
 iptables-restore -t < /etc/iptables.up.rules
 netfilter-persistent save
 netfilter-persistent reload
-wget https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/trojan.sh && bash trojan.sh && rm trojan.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/trojan.sh && bash trojan.sh && rm trojan.sh
 systemctl daemon-reload
 systemctl enable v2ray@none.service
 systemctl start v2ray@none.service
@@ -466,22 +466,22 @@ systemctl start trojan.service
 systemctl restart v2ray
 systemctl enable v2ray
 cd /usr/bin 
-wget -O addws "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addws.sh"
-wget -O addvless "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addvless.sh"
-wget -O addtr "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addtr.sh"
-wget -O delws "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/delws.sh"
-wget -O delvless "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/delvless.sh"
-wget -O deltr "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/deltr.sh"
-wget -O cekws "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/cekws.sh"
-wget -O cekvless "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/cekvless.sh"
-wget -O cektr "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/cektr.sh"
-wget -O renewws "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/renewws.sh"
-wget -O renewvless "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/renewvless.sh"
-wget -O renewtr "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/renewtr.sh"
-wget -O xp-ws "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/xp-ws.sh"
-wget -O xp-tr "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/xp-tr.sh"
-wget -O xp-vless "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/xp-vless.sh"
-wget -O certv2ray "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/cert.sh"
+wget -O addws "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/addws.sh"
+wget -O addvless "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/addvless.sh"
+wget -O addtr "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/addtr.sh"
+wget -O delws "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/delws.sh"
+wget -O delvless "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/delvless.sh"
+wget -O deltr "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/deltr.sh"
+wget -O cekws "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/cekws.sh"
+wget -O cekvless "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/cekvless.sh"
+wget -O cektr "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/cektr.sh"
+wget -O renewws "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/renewws.sh"
+wget -O renewvless "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/renewvless.sh"
+wget -O renewtr "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/renewtr.sh"
+wget -O xp-ws "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/xp-ws.sh"
+wget -O xp-tr "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/xp-tr.sh"
+wget -O xp-vless "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/xp-vless.sh"
+wget -O certv2ray "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/cert.sh"
 chmod +x addws
 chmod +x addvless
 chmod +x addtr
