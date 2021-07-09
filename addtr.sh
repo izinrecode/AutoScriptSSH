@@ -17,7 +17,7 @@ clear
 sleep 0.5
                         echo ""
                         echo "Klien yang  akan anda buat sudah ada, harap pakai username lain."
-                        echo "Script By Haweng"
+                        echo "Script By JOMBLOSSH"
                         exit 1
                 fi
         done
@@ -39,4 +39,4 @@ echo -e "link           : ${trojanlink}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
 echo -e ""
-echo -e "By Haweng"
+echo -e "By JOMBLOSSH"
