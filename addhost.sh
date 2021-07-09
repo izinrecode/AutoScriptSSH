@@ -6,11 +6,11 @@ clear
 apt install jq curl -y
 rm /etc/v2ray/domain
 rm /var/lib/premium-script/ipvps.conf
-DOMAIN=hablestore.me
+DOMAIN=aliratuqvpn.xyz
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.hablestore.me
-CF_ID=shokhibrifandi99@gmail.com
-CF_KEY=4f1d941fd48db8d68fb785aa1eba345ac8ae8
+SUB_DOMAIN=${sub}.aliratuqvpn.xyz
+CF_ID=ladrot675@exdonuts.com
+CF_KEY=fe9a1ba40d3498a018fd11e43d5044589bf74
 set -euo pipefail
 IP=$(wget -qO- icanhazip.com);
 echo "Updating DNS for ${SUB_DOMAIN}..."
