@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-echo -e " SEDANG PROSES BOSKU HARAP BERSABAR"
+echo -e " SEDANG PROSES OM HARAP BERSABAR"
 sleep 2
 echo -e ""
 echo -e "=============================-Menu-============================="
@@ -86,4 +86,4 @@ echo -e "* about        : Info Script Auto Install"
 echo -e "* exit         : Logout Dari VPS "
 echo -e ""
 echo -e "==============================================================="
-echo -e "AutoScript By Haweng"
+echo -e "AutoScript By JOMBLOSSH"
