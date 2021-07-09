@@ -17,5 +17,5 @@ echo " Skrip User-Limit belum dijalankan"
 fi
 echo " ";
 echo "===========================================";
-echo "By HAWENG";
+echo "By JOMBLOSSH";
 echo " ";
