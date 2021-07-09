@@ -7,7 +7,7 @@ hari="1"
 Pass=1
 
 
-echo Script AutoCreate Akun SSH dan OpenVPN by Haweng
+echo Script AutoCreate Akun SSH dan OpenVPN by JOMBLOSSH
 sleep 1
 echo Ping Host
 echo Cek Hak Akses...
@@ -45,4 +45,4 @@ echo -e "==============================="
 echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
 echo -e "==============================="
 echo -e "Aktif Sampai   : $exp"
-echo -e "Script by HAWENG"
+echo -e "Script by JOMBLOSSH"
