@@ -2,7 +2,7 @@
 # Debian 9 & 10 64bit
 # Ubuntu 18.04 & 20.04 bit
 # Centos 7 & 8 64bit 
-# By HAWENG
+# By JOMBLOSSH
 # ==================================================
 
 
@@ -89,11 +89,11 @@ WG_RUNNING=$?
 
 # Tambahan
 cd /usr/bin
-wget -O addwg "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/addwg.sh"
-wget -O delwg "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/delwg.sh"
-wget -O cekwg "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/cekwg.sh"
-wget -O xp-wg "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/xp-wg.sh"
-wget -O renewwg "https://raw.githubusercontent.com/Aantonberkentod/AutoScriptSSH/main/renewwg.sh"
+wget -O addwg "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/addwg.sh"
+wget -O delwg "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/delwg.sh"
+wget -O cekwg "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/cekwg.sh"
+wget -O xp-wg "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/xp-wg.sh"
+wget -O renewwg "https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/renewwg.sh"
 chmod +x addwg
 chmod +x delwg
 chmod +x cekwg
