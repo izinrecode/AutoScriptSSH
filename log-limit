@@ -1,6 +1,5 @@
 #!/bin/bash
-# Created by https://hablessh.tech
-# Modified by HAWENG
+# Created by JOMBLOSSH
 
 red='\e[1;31m'
 green='\e[0;32m'
