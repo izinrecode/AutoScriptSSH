@@ -2,4 +2,4 @@
 clear
 accel-cmd show sessions
 echo ""
-echo "By HAWENG"
+echo "By JOMBLOSSH"
