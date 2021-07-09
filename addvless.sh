@@ -25,8 +25,8 @@ sed -i '/#tls$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/v2ray/vless.json
 sed -i '/#none$/a\### '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/v2ray/vnone.json
-vlesslink1="vless://${user}@${domain}:2083?path=/hablessh&security=tls&encryption=none&type=ws#${user}"
-vlesslink2="vless://${user}@${domain}:8880?path=/hablessh&encryption=none&type=ws#${user}"
+vlesslink1="vless://${user}@${domain}:2083?path=/jomblossh&security=tls&encryption=none&type=ws#${user}"
+vlesslink2="vless://${user}@${domain}:8880?path=/jomblossh&encryption=none&type=ws#${user}"
 systemctl restart v2ray@vless
 systemctl restart v2ray@vnone
 clear
@@ -39,11 +39,11 @@ echo -e "port none TLS  : 8880"
 echo -e "id             : ${user}"
 echo -e "Encryption     : none"
 echo -e "network        : ws"
-echo -e "path           : /hablessh"
+echo -e "path           : /jomblossh"
 echo -e "================================="
 echo -e "link TLS       : ${vlesslink1}"
 echo -e "================================="
 echo -e "link none TLS  : ${vlesslink2}"
 echo -e "================================="
 echo -e "Expired On     : $exp"
-echo -e "By HAWENG"
+echo -e "By JOMBLOSSH"
