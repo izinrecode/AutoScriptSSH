@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script by : HABLESSH
+# Script by : JOMBLOSSH
 #!/bin/bash
 clear
 MAX=2
