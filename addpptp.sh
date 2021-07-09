@@ -44,6 +44,6 @@ Username     : $VPN_USER
 Password     : $VPN_PASSWORD
 Expired On   : $exp
 
-By Haweng
+By JOMBLOSSH
 =================================
-EOF
+GAS
