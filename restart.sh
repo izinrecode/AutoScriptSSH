@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script by : HAWENG
+# Script by : JOMBLOSSH
 clear
 echo -e ""
 echo -e "======================================"
