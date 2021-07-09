@@ -2,19 +2,19 @@
 # ===========================================
 # | AUTOSCRIPT FOR INSTALLATION SSH AND VPN |
 # ===========================================
-# | Owner : Administrator HABLESSH    |
-# | Date Owned : 12/10/2018                 |
-# | Telegram : t.me/omaigatt_ikan             |
+# | Owner : Administrator JOMBLOSSH    |
+# | Group : JsTFreeNet                 |
+# | Telegram : t.me/JSTFREENET             |
 # ===========================================
             
             echo ""
 
                if [ ! -f /usr/local/bin/deleteduser ]; then
-               echo "echo "Autoscript by HABLESSH"" > /usr/local/bin/deleteduser
+               echo "echo "Autoscript by JOMBLOSSH"" > /usr/local/bin/deleteduser
                chmod +x /usr/local/bin/deleteduser
                fi
                hariini=`date +%d-%m-%Y`
-               echo "Autoscript by HABLESSH"
+               echo "Autoscript by JOMBLOSSH"
                echo "Thank you for removing the EXPIRED USERS"
                echo "--------------------------------------"
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
@@ -42,7 +42,7 @@
                then
 		    	:
                else
-               echo "echo "HABLESSH- Username : $username are expired at: $tgl $bulantahun and removed : $hariini "" >> /usr/local/bin/deleteduser
+               echo "echo "jomblossh- Username : $username are expired at: $tgl $bulantahun and removed : $hariini "" >> /usr/local/bin/deleteduser
 	           echo "Username $username that are expired at $tgl $bulantahun removed from the VPS $hariini"
                userdel $username
                fi
