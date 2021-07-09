@@ -1,6 +1,5 @@
 #!/bin/bash
-# Created by https:hablessh.tech
-# Modified by 0123456
+# Created by JOMBLOSSH.tech
 
 red='\e[1;31m'
 green='\e[0;32m'
@@ -20,7 +19,7 @@ sleep 1
 clear
 fi
 if [ ! -f /usr/local/bin/deleteduser ]; then
-    echo "echo "Script Created By HABLESSH.TECH"" > /usr/local/bin/deleteduser
+    echo "echo "Script Created By JOMBLOSSH.TECH"" > /usr/local/bin/deleteduser
 	chmod +x /usr/local/bin/deleteduser
 fi
 hariini=`date +%d-%m-%Y`
