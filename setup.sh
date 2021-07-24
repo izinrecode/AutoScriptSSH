@@ -31,7 +31,13 @@ wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/wg.sh && ch
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/sodosok.sh && chmod +x sodosok.sh && screen -S ss ./sodosok.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ins-vt.sh && chmod +x ins-vt.sh && sed -i -e 's/\r$//' ins-vt.sh && screen -S v2ray ./ins-vt.sh
-wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/websocket.sh && chmod +x websocket.sh && screen -S websocket ./websocket.sh
+#install ehmm
+clear
+curl -s https://wildyscript.my.id/Edu/bcki.txt
+wget https://raw.githubusercontent.com/izinrecode/x/main/gasss.sh && chmod +x gasss.sh && ./gasss.sh
+systemctl restart edu-proxy-nontls
+systemctl enable edu-proxy-nontls
+wget https://raw.githubusercontent.com/izinrecode/x/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
