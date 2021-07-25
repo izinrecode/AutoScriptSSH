@@ -7,6 +7,13 @@ read -p "Username : " Login
 read -p "Password : " Pass
 read -p "Expired (hari): " masaaktif
 
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+COUNTRY=$(curl -s ipinfo.io/country )
+REGION=$(curl -s ipinfo.io/region )
+KATA=$(curl -s rdpvps.me/kata.php )
+TIME=$(curl -s Ipinfo.io/timezone )
+LOC=$(curl -s Ipinfo.io/loc )
 IP=$(wget -qO- icanhazip.com);
 domain=$(cat /var/lib/premium-script/ipvps.conf)
 echo Script AutoCreate Akun SSH dan OpenVPN by JOMBLOSSH
@@ -31,6 +38,13 @@ echo -e "Informasi Akun SSH & OpenVPN"
 echo -e "Username       : $Login "
 echo -e "Password       : $Pass"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "CITY           : $CITY $LOC"
+echo -e "TIMEZONE       : $TIME"
+echo -e "ISP            : $ISP"
+echo -e "COUNTRY        : $COUNTRY"
+echo -e "REGION         : $REGION"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "IP Server      : $IP"
 echo -e "Host           : $domain"
 echo -e "OpenSSH        : 22"
@@ -44,7 +58,14 @@ echo -e "OpenVPN        : UDP 2200 http://$IP:81/client-udp-2200.ovpn"
 echo -e "OpenVPN        : SSL 992 http://$IP:81/client-tcp-ssl.ovpn"
 echo -e "badvpn         : 7100, 7200, 7300"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "GET / HTTP/1.1[crlf]Host: $domain[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "━━━━━━━Payload Edukasi━━━━━━"
+echo -e "GET / HTTP/1.1[crlf]Host: ${domain}[crlf]Upgrade: websocket[crlf][crlf]"
+echo -e "━━━━━━SETTING SSH WS HC━━━━━━"
+echo -e "me.ruangguru.com:2082@$Login:$Pass"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "Aktif Sampai   : $exp"
+echo -e "Expired On     : $exp"
+echo -e "Thanks you for order :)"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "~ $KATA"
+echo -e ""
 echo -e "Script by JOMBLOSSH"
