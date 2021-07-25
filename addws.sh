@@ -1,4 +1,11 @@
 #!/bin/bash 
+ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
+CITY=$(curl -s ipinfo.io/city )
+COUNTRY=$(curl -s ipinfo.io/country )
+REGION=$(curl -s ipinfo.io/region )
+KATA=$(curl -s rdpvps.me/kata.php )
+TIME=$(curl -s Ipinfo.io/timezone )
+LOC=$(curl -s Ipinfo.io/loc );
 if [[ "$IP" = "" ]]; then
 domain=$(cat /etc/v2ray/domain)
 else
@@ -61,7 +68,13 @@ systemctl restart v2ray
 systemctl restart v2ray@none
 clear
 echo -e ""
-echo -e "━━━━━━━━━━━V2RAY/VMESS━━━━━━━━━━━"
+echo -e "━━━━━━━━━V2RAY/VMESS━━━━━━━━"
+echo -e "CITY           : $CITY $LOC"
+echo -e "TIMEZONE       : $TIME"
+echo -e "ISP            : $ISP"
+echo -e "COUNTRY        : $COUNTRY"
+echo -e "REGION         : $REGION"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : 8443"
@@ -76,5 +89,7 @@ echo -e "link TLS       : ${vmesslink1}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "link none TLS  : ${vmesslink2}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "~ $KATA"
+echo -e ""
 echo -e "Expired On     : $exp"
 echo -e "By JOMBLOSSH"
