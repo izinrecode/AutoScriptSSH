@@ -27,7 +27,8 @@ echo "$host" >> /var/lib/premium-script/ipvps.conf
 echo "$host" >> /etc/v2ray/domain
 #wget https://raw.githubusercontent.com/izinrecode/test1/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #wget https://raw.githubusercontent.com/izinrecode/test1/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
-wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+#wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/4hidessh/baru/main/installer/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/sstp.sh && chmod +x sstp.sh && screen -S sstp ./sstp.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/wg.sh && chmod +x wg.sh && screen -S wg ./wg.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ssr.sh && chmod +x ssr.sh && screen -S ssr ./ssr.sh
@@ -36,10 +37,10 @@ wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ins-vt.sh &
 #install ehmm
 clear
 #curl -s https://wildyscript.my.id/Edu/bcki.txt
-wget https://raw.githubusercontent.com/izinrecode/x/main/gasss.sh && chmod +x gasss.sh && ./gasss.sh
-systemctl restart edu-proxy-nontls
-systemctl enable edu-proxy-nontls
-wget https://raw.githubusercontent.com/izinrecode/x/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+#wget https://raw.githubusercontent.com/izinrecode/x/main/gasss.sh && chmod +x gasss.sh && ./gasss.sh
+#systemctl restart edu-proxy-nontls
+#systemctl enable edu-proxy-nontls
+#wget https://raw.githubusercontent.com/izinrecode/x/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
