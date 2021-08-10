@@ -40,7 +40,7 @@ clear
 #wget https://raw.githubusercontent.com/izinrecode/x/main/gasss.sh && chmod +x gasss.sh && ./gasss.sh
 #systemctl restart edu-proxy-nontls
 #systemctl enable edu-proxy-nontls
-wget https://raw.githubusercontent.com/izinrecode/x/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
+wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/websocket.sh && chmod +x websocket.sh && ./websocket.sh
 wget https://raw.githubusercontent.com/izinrecode/AutoScriptSSH/main/ipsec.sh && chmod +x ipsec.sh && screen -S ipsec ./ipsec.sh
 apt-get install unzip
 rm -f /root/ssh-vpn.sh
