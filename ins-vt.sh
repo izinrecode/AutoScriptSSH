@@ -127,7 +127,7 @@ cat> /etc/v2ray/none.json << END
   },
   "inbounds": [
     {
-      "port": 2053,
+      "port": 2052,
       "protocol": "vmess",
       "settings": {
         "clients": [
