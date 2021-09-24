@@ -51,7 +51,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       {
       "v": "2",
       "ps": "${user}",
-      "add": "imclas.jomblossh.tech",
+      "add": "covid19.go.id",
       "port": "80",
       "id": "${uuid}",
       "aid": "2",
@@ -78,7 +78,7 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Remarks        : ${user}"
 echo -e "Domain         : ${domain}"
 echo -e "port TLS       : 8443"
-echo -e "port none TLS  : 2052"
+echo -e "port none TLS  : 80"
 echo -e "id             : ${uuid}"
 echo -e "alterId        : 2"
 echo -e "Security       : auto"
