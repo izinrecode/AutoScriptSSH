@@ -39,7 +39,7 @@ cat>/etc/v2ray/$user-tls.json<<EOF
       "add": "${domain}",
       "port": "8443",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "0",
       "net": "ws",
       "path": "/jomblossh",
       "type": "none",
@@ -54,7 +54,7 @@ cat>/etc/v2ray/$user-none.json<<EOF
       "add": "covid19.go.id",
       "port": "80",
       "id": "${uuid}",
-      "aid": "2",
+      "aid": "0",
       "net": "ws",
       "path": "/jomblossh",
       "type": "none",
@@ -80,7 +80,7 @@ echo -e "Domain         : ${domain}"
 echo -e "port TLS       : 8443"
 echo -e "port none TLS  : 80"
 echo -e "id             : ${uuid}"
-echo -e "alterId        : 2"
+echo -e "alterId        : 0"
 echo -e "Security       : auto"
 echo -e "network        : ws"
 echo -e "path           : /jomblossh"
