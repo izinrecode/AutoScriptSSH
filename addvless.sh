@@ -3,7 +3,6 @@ ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 COUNTRY=$(curl -s ipinfo.io/country )
 REGION=$(curl -s ipinfo.io/region )
-KATA=$(curl -s rdpvps.me/kata.php )
 TIME=$(curl -s Ipinfo.io/timezone )
 LOC=$(curl -s Ipinfo.io/loc );
 if [[ "$IP" = "" ]]; then
@@ -58,7 +57,6 @@ echo -e "link TLS       : ${vlesslink1}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "link none TLS  : ${vlesslink2}"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "~ $KATA"
 echo -e ""
 echo -e "Expired On     : $exp"
 echo -e "By JOMBLOSSH"
