@@ -4,7 +4,6 @@ ISP=$(curl -s ipinfo.io/org | cut -d " " -f 2-10 )
 CITY=$(curl -s ipinfo.io/city )
 COUNTRY=$(curl -s ipinfo.io/country )
 REGION=$(curl -s ipinfo.io/region )
-KATA=$(curl -s rdpvps.me/kata.php )
 TIME=$(curl -s Ipinfo.io/timezone )
 LOC=$(curl -s Ipinfo.io/loc )
 IP=$(wget -qO- icanhazip.com);
@@ -64,6 +63,5 @@ echo -e "━━━━━━━━━━━━━━━━━━━━━━━�
 echo -e "Expired On     : $exp"
 echo -e "Thanks you for order :)"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "~ $KATA"
 echo -e ""
 echo -e "Script by JOMBLOSSH"
